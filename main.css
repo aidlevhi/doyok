@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: system-ui, -apple-system ;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+  background: rgb(135,172,163);
+  background: radial-gradient(circle, rgba(135,172,163,1) 0%, rgba(23,88,115,1) 100%);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+}
+
+
+#display {
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 45px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+  }
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 50px;
+    margin: 3px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system ;
+    transition: all 200ms ease;
+}
+
+
+button#3, button#6, button#9 {
+    width: 60pxs;
+}
+
+button#equal {
+    height: 60px;
+    width: 130px;
+}
+
+
+.calculator.dark {
+    background-color: #0c1446;
+    border: 1px solid rgba(255, 255, 255, 0.44);
+  }
+
+  .calculator.dark p {
+    color: white;
+    text-align: right;
+}
+
+  .calculator.dark #display {
+    color: white;
+  }
+
+  .calculator.dark button#clear {
+    background-color: #2b7c85 ;
+    color:  white ;
+  }
+
+  .calculator.dark button.btn-number {
+    background-color: #175873;
+    color: white ;
+  }
+
+  .calculator.dark button.btn-number:hover {
+    background-color: #87aca3;
+    color: white ;
+  }
+
+  .calculator.dark button.btn-operator {
+    background-color: #2b7c85 ;
+    color: white;
+  }
+  
+  .calculator.dark button.btn-operator:hover {
+    background-color: #87aca3 ;
+    color: white;
+  }
+  .calculator.dark button.btn-equal {
+    background-color: #2b7c85 ;
+    color: #ffffff;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+}  
+  
+
+
+ 
